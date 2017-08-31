@@ -2,4 +2,10 @@
 
 // function to transition new list item
 
-// test functions 
+// test functions
+$('#addButton').on('click', function(){
+    var newListItemText = $('#newTask').val();
+    $('#newTask').val("").focus();
+    console.log(newListItemText);
+    $('.task-list').append('<li>'+ newListItemText+'</li>');
+});
