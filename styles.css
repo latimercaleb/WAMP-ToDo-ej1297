@@ -15,8 +15,20 @@ body {
 
 ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
+li:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    cursor:pointer;
+}
+button:hover {
+    cursor:pointer;
+}
 input {
     margin: 10px;
+}
+#listHeader {
+padding-top: 10px;
 }

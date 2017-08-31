@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ToDO: WAMP</title>
+	<title>ToDo: WAMP</title>
 	<link rel='stylesheet' type='text/css' href='styles.css' />
 </head>
 <body>
 	<div class = 'wrapper'>
-		<h2 id='ListHeader'>Task List</h2>
+		<h1 id='ListHeader'>Task List</h1>
 		<ul class='task-list'>
 			<li>Thing1</li>
 			<li>Thing2</li>
@@ -14,6 +14,11 @@
 		</ul>
 		<input type='text' autocomplete="off" placeholder="New Task" id="newTask" />
 		<button id="addButton">Add</button>
+		<hr />
+		<div class='done'>
+			<p class='itemsCompleteCount'></p>
+			<ul class='done-task-list'></ul>
+		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type = 'text/javascript' src='script.js'></script>
