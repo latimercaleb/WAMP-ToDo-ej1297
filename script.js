@@ -1,6 +1,11 @@
 // function to write to the db
 
-// add a keypress handle for when enter is pressed when filling out the form
+//keypress handle for when enter is pressed when filling out the form
+$('#newTask').keypress(function(e){
+    if(e.keyCode === 13){ // checks to see if the key pressed is the enter key (or code 13)
+        $('#addButton').click(); // calls the event
+    }
+});
 // add some styling to the button to make it look better
 
 // function to add new list item
