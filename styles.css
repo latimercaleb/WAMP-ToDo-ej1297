@@ -23,12 +23,24 @@ li:hover {
     color: #000000;
     cursor:pointer;
 }
+
 button:hover {
     cursor:pointer;
 }
+
 input {
     margin: 10px;
 }
+
 #listHeader {
 padding-top: 10px;
+}
+
+button {
+    background-color: #9a0007;
+    elevation: 2;
+    font-weight: 400;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
 }
