@@ -6,13 +6,11 @@ $('#newTask').keypress(function(e){
         $('#addButton').click(); // calls the event
     }
 });
-// add some styling to the button to make it look better
 
 // function to add new list item
 $('#addButton').on('click', function(){
     var newListItemText = $('#newTask').val();
     $('#newTask').val("").focus();
-    console.log(newListItemText);
     $('.task-list').append('<li>'+ newListItemText+'</li>');
     displayDone();
 });
@@ -27,7 +25,6 @@ $('.task-list').on('click', 'li', function(){
 
 //function to delete done items
 $('.done-task-list').on('click','li', function(){
-    console.log('triggered');
     $(this).fadeOut(400,function(){
         $(this).remove();
         displayDone();
@@ -39,9 +36,11 @@ function displayDone(){
     if(count > 0){
         if(count == 1){
             $('.itemsCompleteCount').html(count + ' item done');
+            $('.itemsCompleteCount').css('opacity', '0.68');
         }
         else{
             $('.itemsCompleteCount').html(count + ' items done');
+             $('.itemsCompleteCount').css('opacity', '0.68');
         }
     }
     else {
