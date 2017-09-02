@@ -30,6 +30,7 @@ $('.done-task-list').on('click','li', function(){
         displayDone();
     });
 });
+
 // function to display count and message of the done list or clear it if there are no done items
 function displayDone(){
     let count = $('.done-task-list').children().length;
