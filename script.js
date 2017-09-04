@@ -21,6 +21,8 @@ $('.task-list').on('click', 'li', function(){
     $(this).fadeTo('slow', 0.68);
     $(this).css('text-decoration','line-through');
     $('.done-task-list').append(this);
+    let itemName = $(this).html();
+    $.get('mark.php', {as: 'done', name: itemName});
     displayDone();
 });
 
@@ -32,6 +34,8 @@ displayDone();
 $('.done-task-list').on('click','li', function(){
     $(this).fadeOut(400,function(){
         $(this).remove();
+        let itemName = $(this).html();
+        $.get('mark.php', {as: 'delete', name:'itemName'});
         displayDone();
     });
 });
