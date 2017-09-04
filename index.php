@@ -34,7 +34,10 @@ $result = $conn -> query($sql);
 		<ul class='task-list'>
 			<?php foreach($result as $item): ?>
 				<?php if(!$item["done"]): ?>
-				<li><?php echo $item["name"]; ?></li>
+				<li>
+					<span class="hidden-id"><?php echo $item["id"];?></span>
+					<?php echo $item["name"]; ?>
+				</li>
 			<?php endif; ?>
 			<?php endforeach; ?>
 		</ul>
@@ -48,7 +51,10 @@ $result = $conn -> query($sql);
 			<ul class='done-task-list'>
 				<?php foreach($result as $item): ?>
 					<?php if($item["done"]): ?>
-					<li><?php echo $item["name"]; ?></li>
+					<li>
+						<span class="hidden-id"><?php echo $item["id"];?></span>
+						<?php echo $item["name"]; ?>
+					</li>
 				<?php endif; ?>
 				<?php endforeach; ?>
 			</ul>

@@ -21,8 +21,11 @@ $('.task-list').on('click', 'li', function(){
     $(this).fadeTo('slow', 0.68);
     $(this).css('text-decoration','line-through');
     $('.done-task-list').append(this);
-    let itemName = $(this).html();
-    $.get('mark.php', {as: 'done', name: itemName});
+    //grab the id
+    let itemID = $(this).find('.hidden-id').html();
+    console.log(itemID);
+    // pass it into the get request
+    $.get('mark.php', {as: 'done', id: itemID});
     displayDone();
 });
 
@@ -33,9 +36,10 @@ displayDone();
 //function to delete done items
 $('.done-task-list').on('click','li', function(){
     $(this).fadeOut(400,function(){
+        let itemID = $(this).find('.hidden-id').html();
+        console.log(itemID);
+        $.get('mark.php', {as: 'delete', id: itemID});
         $(this).remove();
-        let itemName = $(this).html();
-        $.get('mark.php', {as: 'delete', name:'itemName'});
         displayDone();
     });
 });
