@@ -1,10 +1,8 @@
 <?php
-
 session_start();
-$_SESSION['user_id'] = 1
-$db = new PDO ('mysql:todotable;host=localhost','root','root');
-
+$_SESSION['user_id'] = 1;
+$db = new PDO ('mysql:dbname = todo;host=localhost','root','latimercaleb');
 if(!isset($_SESSION['user_id'])){
-    die('Something went wrong on the server');
+    die('aint signed in');
 }
- ?>
+?>

@@ -1,19 +1,20 @@
 // function to write to the db
 
 //keypress handle for when enter is pressed when filling out the form
-$('#newTask').keypress(function(e){
-    if(e.keyCode === 13){ // checks to see if the key pressed is the enter key (or code 13)
-        $('#addButton').click(); // calls the event
-    }
-});
-
-// function to add new list item
-$('#addButton').on('click', function(){
-    var newListItemText = $('#newTask').val();
-    $('#newTask').val("").focus();
-    $('.task-list').append('<li>'+ newListItemText+'</li>');
-    displayDone();
-});
+// $('#newTask').keypress(function(e){
+//     if(e.keyCode === 13){ // checks to see if the key pressed is the enter key (or code 13)
+//         $('#addButton').click(); // calls the event
+//     }
+// });
+//
+// // function to add new list item
+// // THIS FUCKING FUNCTION COST ME THREE HOURS OF DEBUGGING
+// $('#addButton').on('click', function(){
+//     //var newListItemText = $('#newTask').val();
+//     //$('#newTask').val("").focus();
+//     //$('.task-list').append('<li>'+ newListItemText+'</li>');
+//     displayDone();
+// });
 
 //function to move items from the list to done.
 $('.task-list').on('click', 'li', function(){
@@ -22,6 +23,10 @@ $('.task-list').on('click', 'li', function(){
     $('.done-task-list').append(this);
     displayDone();
 });
+
+$('.done-task-list').children().css('text-decoration', 'line-through');
+$('.done-task-list').children().fadeTo('slow', 0.68);
+displayDone();
 
 //function to delete done items
 $('.done-task-list').on('click','li', function(){
