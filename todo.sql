@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 04, 2017 at 06:04 PM
+-- Generation Time: Sep 04, 2017 at 06:22 PM
 -- Server version: 5.6.37
 -- PHP Version: 7.0.22
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `todo`
 --
+CREATE DATABASE IF NOT EXISTS `todo` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `todo`;
 
 -- --------------------------------------------------------
 
