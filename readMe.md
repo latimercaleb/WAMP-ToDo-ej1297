@@ -10,16 +10,26 @@ It is a simple to do list that will enable a user to do the following:
 All information is persisted on a database using client server architecture.
 
 ## How to install
-If you do not already have a wamp stack to use this application first install **bitnami wamp stack 7.0.22-1** here :  https://bitnami.com/stack/wamp/installer
+If you do not already have a WAMP stack to use this application first install **bitnami wamp stack 7.0.22-1** here :  https://bitnami.com/stack/wamp/installer
 
-Follow the instructions in the installation wizard, once the set up is done clone this repo take the `wamp` folder and drop it in the `Bitnami\wampstack-7.0.22-1\apache2\htdocs` folder.
+Follow the instructions in the installation wizard until you reach the part asking for a password.
 
-Next grab the `todo` folder and drop it in the `Bitnami\wampstack-7.0.22-1\mysql\data` folder.
+Use `latimercaleb` for the first time set up. I'll describe how to change the password later, once the set up is done clone this repo take the `wamp` folder and drop it in the `Bitnami\wampstack-7.0.22-1\apache2\htdocs` folder.
+
+Next to set up the database open `phpmyadmin` with the bitnami management tool. Once inside click `new` in the leftmost tree. Then in the top nav bar click `import` and choose the `todo.sql` that you downloaded from the repo.
 
 Open the Bitnami app and start apache and MySQL.
 
 Then navigate to `localhost/wamp` in your browser.
 
+## To change your password
+To change the password to something other than the default `latimercaleb`
+
+First go to `phpmyadmin` and click change password, make sure to remember what it is.
+Then in the `wamp` folder the following files to the new password where you see `latimercaleb`:
+- index.php, line 3
+- list.php, line 2
+- mark.php, line 2
 
 ## How to use
 
