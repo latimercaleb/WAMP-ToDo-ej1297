@@ -14,7 +14,7 @@ If you do not already have a wamp stack to use this application first install **
 
 Once the set up is done clone this repo take the `wamp` folder and drop it in the `Bitnami\wampstack-7.0.22-1\apache2\htdocs` folder.
 
-Next grab the `todo` folder and drop it in the Bitnami\wampstack-7.0.22-1\mysql\data folder.
+Next grab the `todo` folder and drop it in the `Bitnami\wampstack-7.0.22-1\mysql\data` folder.
 
 Open the Bitnami app and start apache and MySQL.
 
