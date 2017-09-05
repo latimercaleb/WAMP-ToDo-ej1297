@@ -40,12 +40,12 @@ Click the enter key or click the + button on the screen
 
 The item will be added to the table
 
-NOTE: Each time you add to the list you will have to click in order to start typing again or you press `TAB` on the keyboard and begin typing.
+**NOTE:** Each time you add to the list you will have to click in order to start typing again or you press `TAB` on the keyboard and begin typing.
 
 ### Marking an item done
 Click the item in the list, it will move to the bottom with a strike through it and be at a less opacity. It is now marked done
 
-### To Delete items
+### Deleting an item
 Click an item that is marked done. It will disappear. It is now removed from the list and the database.
 
 ## A point of caution
