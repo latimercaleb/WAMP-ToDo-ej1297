@@ -27,9 +27,9 @@ To change the password to something other than the default `latimercaleb`
 
 First go to `phpmyadmin` and click change password, make sure to remember what it is.
 Then in the `wamp` folder the following files to the new password where you see `latimercaleb`:
-- index.php, line 3
-- list.php, line 2
-- mark.php, line 2
+- index.php, line 3 `$dbConnection = new mysqli('localhost', 'root', 'THENEWPASSWORD', 'todo');`
+- list.php,  line 2 `$dbConnection = new mysqli('localhost', 'root', 'THENEWPASSWORD', 'todo');`
+- mark.php,  line 2 `$dbConnection = new mysqli('localhost', 'root', 'THENEWPASSWORD', 'todo');`
 
 ## How to use
 
