@@ -21,11 +21,11 @@ ul {
 li:hover {
     background-color: #FFFFFF;
     color: #000000;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 button:hover {
-    cursor:pointer;
+    cursor: pointer;
 }
 
 input {
@@ -38,7 +38,7 @@ input {
 
 button {
     background-color: #9a0007;
-    elevation: 2;
+    z-index: 1;
     font-weight: 400;
     color: white;
     border-radius: 20px;
