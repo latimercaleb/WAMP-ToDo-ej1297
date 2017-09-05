@@ -12,7 +12,7 @@ All information is persisted on a database using client server architecture.
 ## How to install
 If you do not already have a wamp stack to use this application first install **bitnami wamp stack 7.0.22-1** here :  https://bitnami.com/stack/wamp/installer
 
-Once the set up is done clone this repo take the `wamp` folder and drop it in the `Bitnami\wampstack-7.0.22-1\apache2\htdocs` folder.
+Follow the instructions in the installation wizard, once the set up is done clone this repo take the `wamp` folder and drop it in the `Bitnami\wampstack-7.0.22-1\apache2\htdocs` folder.
 
 Next grab the `todo` folder and drop it in the `Bitnami\wampstack-7.0.22-1\mysql\data` folder.
 
