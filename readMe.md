@@ -16,7 +16,9 @@ Follow the instructions in the installation wizard until you reach the part aski
 
 Use `latimercaleb` for the first time set up. I'll describe how to change the password later, once the set up is done clone this repo take the `wamp` folder and drop it in the `Bitnami\wampstack-7.0.22-1\apache2\htdocs` folder.
 
-Next to set up the database open `phpmyadmin` with the bitnami management tool. Once inside click `new` in the leftmost tree. Then in the top nav bar click `import` and choose the `todo.sql` that you downloaded from the repo.
+Next to set up the database open `phpmyadmin` with the bitnami management tool. Login in with `root` and `latimercaleb`.
+
+Once inside click `new` in the leftmost tree. Then in the top nav bar click `import` and choose the `todo.sql` that you downloaded from the repo.
 
 Open the Bitnami app and start apache and MySQL.
 
@@ -30,6 +32,8 @@ Then in the `wamp` folder the following files to the new password where you see 
 - index.php, line 3 `$dbConnection = new mysqli('localhost', 'root', 'THENEWPASSWORD', 'todo');`
 - list.php,  line 2 `$dbConnection = new mysqli('localhost', 'root', 'THENEWPASSWORD', 'todo');`
 - mark.php,  line 2 `$dbConnection = new mysqli('localhost', 'root', 'THENEWPASSWORD', 'todo');`
+
+Changing your password also changes the password for `root` in `phpmyadmin` so keep that in mind.
 
 ## How to use
 
