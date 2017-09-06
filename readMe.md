@@ -9,6 +9,11 @@ It is a simple to do list that will enable a user to do the following:
 
 All information is persisted on a database using client server architecture.
 
+## Demo
+
+![Video demo of app](https://github.com/latimercaleb/WAMP-ToDo-ej1297/blob/DesktopTest/docs/Wamp%20demo%20recording/Wamp%20demo%20recording_media/Wamp%20demo%20recording.gif)
+
+
 ## How to install
 If you do not already have a WAMP stack to use this application first install **bitnami wamp stack 7.0.22-1** here :  https://bitnami.com/stack/wamp/installer
 
